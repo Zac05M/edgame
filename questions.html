@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout Rush — Stacks &amp; Queues Quiz</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      max-width: 820px;
+      margin: 40px auto;
+      padding: 0 20px 80px;
+      background: #f7f5ef;
+      color: #1e1a2e;
+      line-height: 1.5;
+    }
+    h1 { color: #b5651d; margin-bottom: 4px; }
+    .intro { color: #555; margin-bottom: 32px; }
+    .q {
+      background: #fff;
+      border: 2px solid #e0d6c2;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 22px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .q h3 { margin: 0 0 12px; font-size: 1.05rem; }
+    .qnum { color: #b5651d; }
+    ol.opts { list-style: none; margin: 0; padding: 0; }
+    ol.opts li {
+      padding: 7px 12px;
+      margin: 6px 0;
+      background: #faf8f2;
+      border: 1px solid #e8e0cf;
+      border-radius: 6px;
+    }
+    .letter { font-weight: 700; color: #2a6df0; margin-right: 8px; }
+    code {
+      background: #efe9dd;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-family: 'Consolas', monospace;
+      font-size: 0.92em;
+    }
+    pre {
+      background: #2b2440;
+      color: #e8e8f0;
+      padding: 12px 14px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Stacks &amp; Queues — Applied Quiz</h1>
+  <p class="intro">
+    Ten questions testing whether you can <em>apply</em> FIFO (queues),
+    FILO/LIFO (stacks), the push/pop/enqueue/dequeue operations, and how the
+    call stack drives program execution. Pick the single best answer.
+  </p>
+
+  <div class="q">
+    <h3><span class="qnum">Q1.</span> Five shoppers join a single checkout line in this order:
+      Ana, Bo, Cy, Dee, Eli. The cashier serves them one at a time with no
+      cutting. Who is the <strong>third</strong> person to leave the line?</h3>
+    <ol class="opts">
+      <li><span class="letter">A</span> Ana</li>
+      <li><span class="letter">B</span> Bo</li>
+      <li><span class="letter">C</span> Cy</li>
+      <li><span class="letter">D</span> Dee</li>
+    </ol>
+  </div>
+
+  <div class="q">
+    <h3><span class="qnum">Q2.</span> You stack grocery cans in a tall pile, placing them in this order
+      (bottom to top): Soup, Beans, Corn, Peas. You can only take the can on
+      top. If you remove exactly two cans, which cans are <strong>left</strong> in the pile?</h3>
+    <ol class="opts">
+      <li><span class="letter">A</span> Soup and Beans</li>
+      <li><span class="letter">B</span> Corn and Peas</li>
+      <li><span class="letter">C</span> Soup and Peas</li>
+      <li><span class="letter">D</span> Beans and Corn</li>
+    </ol>
+  </div>
+
+  <div class="q">
+    <h3><span class="qnum">Q3.</span> A stack starts empty. You perform:
+      <code>push A</code>, <code>push B</code>, <code>pop</code>,
+      <code>push C</code>, <code>push D</code>, <code>pop</code>.
+      What is on <strong>top</strong> of the stack now?</h3>
+    <ol class="opts">
+      <li><span class="letter">A</span> A</li>
+      <li><span class="letter">B</span> B</li>
+      <li><span class="letter">C</span> C</li>
+      <li><span class="letter">D</span> D</li>
+    </ol>
+  </div>
+
+  <div class="q">
+    <h3><span class="qnum">Q4.</span> You add the values 1, 2, 3, 4, 5 (in that order) to an empty
+      <strong>queue</strong>, and the same values in the same order to an empty
+      <strong>stack</strong>. You then remove everything from each. The
+      <strong>first</strong> value out of the queue and the <strong>first</strong>
+      value out of the stack are, respectively:</h3>
+    <ol class="opts">
+      <li><span class="letter">A</span> 1 and 5</li>
+      <li><span class="letter">B</span> 5 and 1</li>
+      <li><span class="letter">C</span> 1 and 1</li>
+      <li><span class="letter">D</span> 5 and 5</li>
+    </ol>
+  </div>
+
+  <div class="q">
+    <h3><span class="qnum">Q5.</span> You visit web pages in this order, clicking links forward:
+      Home → News → Article → Photo. Then you press the browser
+      <strong>Back</strong> button twice. What page are you looking at?</h3>
+    <ol class="opts">
+      <li><span class="letter">A</span> Home</li>
+      <li><span class="letter">B</span> News</li>
+      <li><span class="letter">C</span> Article</li>
+      <li><span class="letter">D</span> Photo</li>
+    </ol>
+  </div>
+
+  <div class="q">
+    <h3><span class="qnum">Q6.</span> A text editor implements <strong>Undo</strong> with a stack.
+      You type the words <code>the</code>, then <code>cat</code>, then
+      <code>sat</code> (three actions pushed in that order). You press Undo
+      once, then type <code>ran</code>, then press Undo once more. Which word
+      did that final Undo remove?</h3>
+    <ol class="opts">
+      <li><span class="letter">A</span> sat</li>
+      <li><span class="letter">B</span> cat</li>
+      <li><span class="letter">C</span> ran</li>
+      <li><span class="letter">D</span> the</li>
+    </ol>
+  </div>
+
+  <div class="q">
+    <h3><span class="qnum">Q7.</span> A program runs this code:</h3>
+    <pre>function a() { b(); }
+function b() { c(); }
+function c() { /* pause here */ }
+a();</pre>
+    <h3>Execution is paused inside <code>c()</code>. Reading the call stack from
+      <strong>top to bottom</strong>, what is the order of frames?</h3>
+    <ol class="opts">
+      <li><span class="letter">A</span> a, b, c</li>
+      <li><span class="letter">B</span> c, b, a</li>
+      <li><span class="letter">C</span> main, a, b (c hasn't been pushed yet)</li>
+      <li><span class="letter">D</span> c, a, b</li>
+    </ol>
+  </div>
+
+  <div class="q">
+    <h3><span class="qnum">Q8.</span> When the paused <code>c()</code> from Q7 finishes and every
+      function returns normally, in what order do the frames get
+      <strong>popped</strong> off the call stack?</h3>
+    <ol class="opts">
+      <li><span class="letter">A</span> a, then b, then c</li>
+      <li><span class="letter">B</span> c, then b, then a</li>
+      <li><span class="letter">C</span> b, then c, then a</li>
+      <li><span class="letter">D</span> They are all removed at the same time</li>
+    </ol>
+  </div>
+
+  <div class="q">
+    <h3><span class="qnum">Q9.</span> A print server receives four jobs and must print them fairly
+      in the order received: Report, Photo, Essay, Invoice. A coworker says
+      &ldquo;the printer works like a stack, so the <strong>last</strong> job
+      sent prints first.&rdquo; What is wrong with their claim, and what
+      actually prints first?</h3>
+    <ol class="opts">
+      <li><span class="letter">A</span> Nothing is wrong; Invoice prints first</li>
+      <li><span class="letter">B</span> A fair print queue is FIFO, not a stack, so Report prints first</li>
+      <li><span class="letter">C</span> It is a stack, but stacks are FIFO, so Report prints first</li>
+      <li><span class="letter">D</span> A print queue is a stack, so Essay prints first</li>
+    </ol>
+  </div>
+
+  <div class="q">
+    <h3><span class="qnum">Q10.</span> You need a data structure that lets you take a list of items and
+      produce them in <strong>reverse</strong> order, using only its normal
+      add/remove operations. Which choice works, and why?</h3>
+    <ol class="opts">
+      <li><span class="letter">A</span> A queue, because dequeue returns items in reverse of how they were enqueued</li>
+      <li><span class="letter">B</span> A stack, because popping returns items in the reverse of the order they were pushed</li>
+      <li><span class="letter">C</span> A queue, because it is FIFO</li>
+      <li><span class="letter">D</span> Neither can reverse a list without extra sorting</li>
+    </ol>
+  </div>
+
+</body>
+</html>
