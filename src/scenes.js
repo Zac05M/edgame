@@ -15,14 +15,13 @@ import { Sfx, Music } from './audio.js';
 // Map an index to a distinct pixel character type (stable per index).
 const charFor = (i) => CHAR_KEYS[i % CHAR_KEYS.length];
 
-// simple persistent progress (max level unlocked) in localStorage
+// All levels are available from the start for every player.
 const PROGRESS_KEY = 'checkoutRushUnlocked';
 export function getUnlocked() {
-  const v = parseInt(localStorage.getItem(PROGRESS_KEY) || '1', 10);
-  return isNaN(v) ? 1 : v;
+  return 999; // every level unlocked
 }
 export function setUnlocked(n) {
-  if (n > getUnlocked()) localStorage.setItem(PROGRESS_KEY, String(n));
+  // no-op: nothing to gate since all levels are open
 }
 
 // ============================================================
